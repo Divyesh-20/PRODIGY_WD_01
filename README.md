@@ -1,8 +1,4 @@
-Here’s a comprehensive `README.md` file that explains the purpose of your project and provides details on the HTML, CSS, and JavaScript files you've created. This will help users understand the project structure, how to use it, and any dependencies or features.
-
----
-
-# Project Name
+# RESPONSIVE LANDING PAGE
 
 ## Overview
 
@@ -75,11 +71,8 @@ This project features a multi-page website with a sticky navbar, dropdown menus,
 
 ## Dependencies
 
-No external dependencies are required for this project. It relies solely on vanilla HTML, CSS, and JavaScript.
+No external dependencies are required for this project. It relies solely on  HTML, CSS, and JavaScript.
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Contributing
 
