@@ -78,20 +78,63 @@ body {
 .section {
   padding: 100px 20px;
   margin-top: 60px; 
-  position: absolute;
-  left: 500px;
-  top: 50px;
+  position: relative; /* Adjust positioning for responsiveness */
+  left: 0;
+  top: 0;
+  text-align: center; /* Center align content */
 }
+
 .section h1 {
-  font-size: 90px;
+  font-size: 2em; /* Adjust font size for responsiveness */
   font-family: 'Times New Roman', serif;
 }
+
 .section p {
-  position: relative;
-  top: 20px;
-  font-size: 20px;
-  font-family:monospace;
+  font-size: 1em; /* Adjust font size for responsiveness */
+  font-family: monospace;
 }
+
 .navbar.scrolled {
   background-color: rgba(51, 51, 51, 0.9);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .nav-menu {
+    display: none; /* Hide nav menu */
+    flex-direction: column; /* Stack items vertically */
+    width: 100%; /* Full width for mobile menu */
+    background-color: #242424; /* Background color for dropdown */
+  }
+
+  .nav-item {
+    margin: 0;
+    text-align: center; /* Center align items in the dropdown */
+  }
+
+  .nav-item.dropdown {
+    position: static; /* Remove absolute positioning for dropdown */
+  }
+
+  .nav-item.dropdown .dropdown-menu {
+    position: static; /* Remove absolute positioning for dropdown menu */
+    width: 100%; /* Full width */
+    box-shadow: none; /* Remove box shadow */
+  }
+
+  .nav-menu.active {
+    display: flex; /* Show the menu when active */
+  }
+
+  .hamburger-menu {
+    display: block; /* Show hamburger menu */
+    cursor: pointer;
+    font-size: 24px;
+    color: white;
+    text-align: center;
+  }
+
+  .hamburger-menu span {
+    display: block;
+  }
 }
